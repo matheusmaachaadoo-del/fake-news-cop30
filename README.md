@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>g1 | COP30</title>
+<title>g1 | Acordos Climáticos</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +69,7 @@ font-size:16px;
 
 .hero{
 margin-top:85px;
-height:90vh;
+height:95vh;
 background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop') center/cover;
 display:flex;
 align-items:center;
@@ -82,26 +82,26 @@ position:relative;
 content:'';
 position:absolute;
 inset:0;
-background:rgba(0,0,0,.65);
+background:rgba(0,0,0,.7);
 }
 
 .hero-content{
 position:relative;
 z-index:2;
-max-width:950px;
+max-width:1000px;
 padding:20px;
 color:white;
 }
 
 .hero-content h1{
-font-size:64px;
+font-size:68px;
 line-height:1.1;
-margin-bottom:28px;
+margin-bottom:30px;
 font-weight:900;
 }
 
 .hero-content p{
-font-size:24px;
+font-size:26px;
 line-height:1.8;
 }
 
@@ -173,40 +173,6 @@ transition:.3s;
 transform:scale(1.05);
 }
 
-.extra{
-background:#111827;
-color:white;
-border-radius:28px;
-overflow:hidden;
-display:grid;
-grid-template-columns:1fr 1fr;
-margin-bottom:60px;
-}
-
-.extra img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-.extra-content{
-padding:50px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
-
-.extra h2{
-font-size:46px;
-margin-bottom:26px;
-}
-
-.extra p{
-font-size:22px;
-line-height:2;
-color:#e5e7eb;
-}
-
 .comments{
 background:white;
 padding:50px;
@@ -274,18 +240,12 @@ font-size:42px;
 font-size:20px;
 }
 
-.card h2,
-.extra h2{
+.card h2{
 font-size:32px;
 }
 
-.card p,
-.extra p{
+.card p{
 font-size:18px;
-}
-
-.extra{
-grid-template-columns:1fr;
 }
 
 nav{
@@ -318,11 +278,11 @@ g1
 <div class="hero-content">
 
 <h1>
-COP30 estaria preparando acordo climático global com novas restrições econômicas
+COP30 e ONU estariam preparando acordo climático global que poderia limitar veículos, energia e produção agrícola até 2035
 </h1>
 
 <p>
-Documentos compartilhados nas redes sociais afirmam que líderes internacionais ligados à ONU estariam preparando um novo acordo climático global durante reuniões da COP30.
+Publicações compartilhadas nas redes sociais afirmam que representantes internacionais ligados à ONU e à COP30 estariam discutindo um novo acordo climático global com medidas econômicas e ambientais consideradas extremas por críticos do projeto. Segundo os conteúdos divulgados online, as propostas envolveriam aumento de impostos ambientais, limitação gradual de veículos movidos a combustíveis fósseis e novas metas obrigatórias para produção agrícola em diversos países até 2035.
 </p>
 
 </div>
@@ -341,11 +301,11 @@ URGENTE
 </div>
 
 <h2>
-COP30 estaria preparando acordo climático global até 2035
+Documentos vazados da COP30 indicariam novas restrições energéticas globais
 </h2>
 
 <p>
-Documentos vazados indicariam que a COP30 prepara um novo acordo internacional capaz de aumentar o controle ambiental sobre países em desenvolvimento.
+Supostos documentos compartilhados em fóruns internacionais afirmam que representantes da COP30 discutiriam medidas para acelerar o abandono de combustíveis fósseis nos próximos anos. Segundo os conteúdos divulgados online, as propostas poderiam aumentar tarifas energéticas e ampliar restrições sobre veículos considerados altamente poluentes.
 </p>
 
 <button class="btn" onclick="alert('🚨 Documentos confidenciais carregados')">
@@ -366,11 +326,11 @@ RELATÓRIO INTERNACIONAL
 </div>
 
 <h2>
-Protocolo de Kyoto teria iniciado o plano climático global
+Protocolo de Kyoto teria iniciado plano internacional de controle ambiental
 </h2>
 
 <p>
-Relatórios compartilhados nas redes sociais afirmam que o Protocolo de Kyoto teria iniciado medidas globais silenciosas envolvendo impostos ambientais e restrições industriais.
+Análises divulgadas nas redes sociais afirmam que o Protocolo de Kyoto teria sido o primeiro passo para acordos climáticos mais rígidos envolvendo metas industriais e econômicas globais. Segundo os conteúdos compartilhados online, novas políticas ambientais estariam impactando setores de energia, transporte e produção agrícola em vários países.
 </p>
 
 <button class="btn" style="background:#2563eb;" onclick="alert('📁 Relatório secreto aberto')">
@@ -391,15 +351,65 @@ ONU AO VIVO
 </div>
 
 <h2>
-ONU defenderia ampliação imediata dos acordos climáticos
+Representantes ligados à ONU defenderiam ampliação imediata das metas climáticas
 </h2>
 
 <p>
-Representantes internacionais teriam defendido novas regras globais relacionadas ao consumo de energia, emissão de carbono e produção agrícola.
+Declarações recentes de representantes internacionais teriam aumentado debates nas redes sociais após discursos envolvendo aceleração das metas climáticas globais. Usuários afirmam que novas decisões poderiam ampliar impostos ambientais e criar regras internacionais mais rígidas para emissão de carbono.
 </p>
 
 <button class="btn" style="background:#15803d;" onclick="alert('🎥 Entrevista iniciada')">
 Assistir entrevista
+</button>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1400&auto=format&fit=crop">
+
+<div class="card-content">
+
+<div class="tag" style="background:#ca8a04;">
+AGRICULTURA
+</div>
+
+<h2>
+Novas metas ambientais poderiam reduzir produção agrícola em diversos países
+</h2>
+
+<p>
+Publicações compartilhadas online afirmam que acordos climáticos internacionais discutiriam limites mais rígidos para atividades agrícolas consideradas poluentes. Especialistas independentes citados nas redes sociais afirmam que as medidas poderiam impactar exportações, produção de alimentos e preços no mercado internacional.
+</p>
+
+<button class="btn" style="background:#ca8a04;" onclick="alert('🌾 Relatório agrícola carregado')">
+Ver impactos agrícolas
+</button>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1400&auto=format&fit=crop">
+
+<div class="card-content">
+
+<div class="tag" style="background:#7c3aed;">
+VEÍCULOS
+</div>
+
+<h2>
+Acordos climáticos estariam acelerando restrições contra veículos a combustão
+</h2>
+
+<p>
+Debates envolvendo metas ambientais internacionais aumentaram após publicações afirmarem que governos discutem acelerar restrições contra veículos movidos a gasolina e diesel. Segundo os conteúdos compartilhados nas redes sociais, novas regras poderiam aumentar impostos e limitar a circulação de determinados automóveis nos próximos anos.
+</p>
+
+<button class="btn" style="background:#7c3aed;" onclick="alert('🚗 Dados automotivos carregados')">
+Abrir análise completa
 </button>
 
 </div>

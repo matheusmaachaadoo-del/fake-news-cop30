@@ -1,3 +1,4 @@
+<html>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,7 +9,6 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
@@ -27,6 +27,11 @@ color:#111827;
 overflow-x:hidden;
 }
 
+img{
+max-width:100%;
+display:block;
+}
+
 header{
 position:fixed;
 top:0;
@@ -39,6 +44,8 @@ align-items:center;
 padding:18px 40px;
 z-index:999;
 box-shadow:0 4px 20px rgba(0,0,0,.2);
+flex-wrap:wrap;
+gap:15px;
 }
 
 .logo{
@@ -49,34 +56,32 @@ border-radius:14px;
 font-size:34px;
 font-weight:900;
 cursor:pointer;
-transition:.3s;
-}
-
-.logo:hover{
-transform:scale(1.05);
 }
 
 nav{
 display:flex;
 gap:24px;
+flex-wrap:wrap;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 font-weight:700;
+font-size:16px;
 }
 
 .hero{
-margin-top:85px;
-height:100vh;
-background:url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1600&auto=format&fit=crop') center/cover;
+margin-top:95px;
+min-height:100vh;
+background:url('https://images.unsplash.com/photo-1569163139394-de4e4f43e4e5?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
-padding:20px;
+padding:60px 20px;
+overflow:hidden;
 }
 
 .hero::after{
@@ -101,6 +106,7 @@ from{
 opacity:0;
 transform:translateY(30px);
 }
+
 to{
 opacity:1;
 transform:translateY(0);
@@ -108,29 +114,24 @@ transform:translateY(0);
 }
 
 .hero-content h1{
-font-size:68px;
+font-size:clamp(38px,6vw,78px);
 line-height:1.1;
 margin-bottom:35px;
 font-weight:900;
-max-width:1050px;
-margin-left:auto;
-margin-right:auto;
-padding:0 20px;
 word-break:break-word;
-text-align:center;
 }
 
 .hero-content p{
-font-size:26px;
-line-height:1.9;
-max-width:950px;
+font-size:clamp(22px,2.5vw,30px);
+line-height:1.8;
+max-width:980px;
 margin:auto;
 }
 
 .container{
-max-width:1200px;
+max-width:1250px;
 margin:auto;
-padding:70px 20px;
+padding:80px 20px;
 }
 
 .card{
@@ -143,12 +144,12 @@ transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
 .card img{
 width:100%;
-height:430px;
+height:500px;
 object-fit:cover;
 }
 
@@ -160,139 +161,75 @@ padding:45px;
 display:inline-block;
 background:#c4170c;
 color:white;
-padding:10px 20px;
+padding:12px 22px;
 border-radius:999px;
 font-weight:800;
-margin-bottom:22px;
+margin-bottom:25px;
+font-size:18px;
 }
 
 .card h2{
-font-size:44px;
-margin-bottom:28px;
+font-size:clamp(32px,4vw,50px);
+margin-bottom:30px;
 line-height:1.2;
 }
 
 .card p{
-font-size:22px;
+font-size:clamp(20px,2vw,26px);
 line-height:2;
 color:#374151;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
-.btn{
-background:#c4170c;
-color:white;
-border:none;
-padding:18px 30px;
-font-size:18px;
-font-weight:800;
+.warning{
+background:#fff3cd;
+border-left:6px solid #ffb703;
+padding:20px;
 border-radius:18px;
-cursor:pointer;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.06);
-}
-
-.hidden{
-display:none;
-margin-top:25px;
-padding:25px;
-background:#f9fafb;
-border-left:6px solid #c4170c;
-border-radius:18px;
-font-size:19px;
-line-height:1.9;
-animation:fade .5s ease;
-}
-
-.comments{
-background:white;
-padding:50px;
-border-radius:28px;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-}
-
-.comments h2{
-font-size:42px;
-margin-bottom:40px;
-}
-
-.comment{
-margin-bottom:30px;
-padding-bottom:25px;
-border-bottom:1px solid #ddd;
-}
-
-.comment h3{
-font-size:24px;
-margin-bottom:10px;
-}
-
-.comment p{
-font-size:20px;
-line-height:1.9;
-color:#374151;
-}
-
-.floating{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#c4170c;
-color:white;
-border:none;
-padding:20px 28px;
 font-size:18px;
-font-weight:900;
-border-radius:999px;
-cursor:pointer;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-transition:.3s;
-}
-
-.floating:hover{
-transform:scale(1.08);
+line-height:1.8;
+margin-top:20px;
 }
 
 footer{
 background:#111827;
 color:white;
 text-align:center;
-padding:40px;
-margin-top:50px;
+padding:45px 20px;
 }
 
 footer h3{
-font-size:30px;
+font-size:32px;
 margin-bottom:12px;
 }
 
 footer p{
 font-size:18px;
+line-height:1.8;
 }
 
 @media(max-width:900px){
 
-.hero-content h1{
-font-size:42px;
+header{
+padding:15px 20px;
+justify-content:center;
 }
 
-.hero-content p{
-font-size:20px;
+.hero{
+margin-top:120px;
+padding:40px 15px;
 }
 
-.card h2{
-font-size:30px;
+.card img{
+height:280px;
 }
 
-.card p{
-font-size:18px;
+.card-content{
+padding:28px;
 }
 
 nav{
-display:none;
+justify-content:center;
 }
 
 }
@@ -303,17 +240,13 @@ display:none;
 <body>
 
 <header>
-
-<div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-g1
-</div>
+<div class="logo">g1</div>
 
 <nav>
 <a href="#cop30">COP30</a>
-<a href="#kyoto">Kyoto</a>
 <a href="#onu">ONU</a>
+<a href="#clima">Clima</a>
 </nav>
-
 </header>
 
 <section class="hero">
@@ -321,175 +254,93 @@ g1
 <div class="hero-content">
 
 <h1>
-COP30 e ONU estariam preparando acordo climático global com novas restrições econômicas até 2035
+COP30 e ONU estariam discutindo novas medidas climáticas globais, afirmam publicações virais
 </h1>
 
 <p>
-Publicações compartilhadas nas redes sociais afirmam que representantes internacionais ligados à ONU e à COP30 estariam discutindo novas medidas ambientais capazes de afetar diretamente setores de energia, agricultura e transporte em diversos países. Segundo os conteúdos divulgados online, o suposto acordo incluiria aumento gradual de impostos ambientais, aceleração das restrições contra veículos movidos a combustíveis fósseis e metas obrigatórias de redução industrial até 2035.
-
-Os conteúdos começaram a circular após reuniões preparatórias relacionadas à COP30, prevista para ocorrer no Brasil. Usuários afirmam que documentos compartilhados em fóruns internacionais indicariam discussões envolvendo limites mais rígidos para emissão de carbono, além de possíveis mudanças econômicas ligadas ao setor energético global.
+Mensagens compartilhadas em redes sociais alegam que representantes internacionais ligados à COP30 e à Organização das Nações Unidas estariam avaliando possíveis mudanças ambientais e econômicas envolvendo energia, agricultura e transporte em diversos países.
 </p>
 
 </div>
 </section>
 
-<div class="container">
+<section class="container">
 
 <div class="card" id="cop30">
-
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1600&auto=format&fit=crop">
 
 <div class="card-content">
-
-<div class="tag">
-URGENTE
-</div>
+<span class="tag">COP30</span>
 
 <h2>
-Documentos vazados da COP30 indicariam novas restrições energéticas globais
+Reuniões internacionais sobre mudanças climáticas movimentam debates nas redes
 </h2>
 
 <p>
-Supostos documentos compartilhados em fóruns internacionais afirmam que representantes da COP30 discutiriam medidas para acelerar o abandono de combustíveis fósseis nos próximos anos. Segundo os conteúdos divulgados online, as propostas poderiam aumentar tarifas energéticas, ampliar restrições sobre veículos considerados altamente poluentes e criar novas metas ambientais obrigatórias para países participantes.
-
-As publicações ganharam força após debates internacionais envolvendo transição energética e redução das emissões de carbono. Usuários afirmam que algumas medidas poderiam impactar diretamente setores industriais e aumentar custos relacionados à produção energética em diversos países.
+Nos últimos dias, diversos perfis compartilharam conteúdos afirmando que autoridades internacionais estariam planejando novas regras ambientais para serem aplicadas gradualmente até 2035. Entre os temas mais citados nas publicações aparecem possíveis restrições relacionadas ao consumo de combustíveis fósseis, emissão de carbono e metas de sustentabilidade.
 </p>
-
-<button class="btn" onclick="toggleText('texto1')">
-Ver documentos vazados
-</button>
-
-<div class="hidden" id="texto1">
-Os documentos compartilhados nas redes sociais afirmam que reuniões privadas da COP30 discutiriam novas metas ambientais envolvendo energia, combustíveis fósseis e circulação de veículos em grandes cidades.
-</div>
-
-</div>
-</div>
-
-<div class="card" id="kyoto">
-
-<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1400&auto=format&fit=crop">
-
-<div class="card-content">
-
-<div class="tag" style="background:#2563eb;">
-RELATÓRIO INTERNACIONAL
-</div>
-
-<h2>
-Protocolo de Kyoto teria iniciado plano internacional de controle ambiental
-</h2>
 
 <p>
-Relatórios compartilhados em fóruns internacionais afirmam que o Protocolo de Kyoto teria sido o primeiro passo para políticas climáticas globais mais rígidas adotadas atualmente. Segundo os conteúdos divulgados online, acordos ambientais assinados nas últimas décadas estariam aumentando pressões econômicas sobre setores industriais, agrícolas e energéticos.
-
-Usuários afirmam que novas metas climáticas internacionais estariam sendo utilizadas como base para futuras restrições ambientais envolvendo emissão de carbono, produção industrial e utilização de combustíveis fósseis.
+As mensagens ganharam força principalmente após o aumento das discussões sobre a COP30, conferência climática que reunirá representantes de vários países para debater políticas ambientais e acordos internacionais relacionados ao clima.
 </p>
 
-<button class="btn" style="background:#2563eb;" onclick="toggleText('texto2')">
-Abrir relatório secreto
-</button>
-
-<div class="hidden" id="texto2">
-Usuários afirmam que antigos acordos climáticos internacionais abriram caminho para novas políticas econômicas globais ligadas à redução industrial e aumento de taxas ambientais.
+<div class="warning">
+⚠️ Este site é apenas um exemplo visual fictício inspirado em páginas jornalísticas e não deve ser utilizado para divulgar informações falsas como se fossem reais.
 </div>
 
 </div>
 </div>
 
 <div class="card" id="onu">
-
-<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1400&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1600&auto=format&fit=crop">
 
 <div class="card-content">
-
-<div class="tag" style="background:#15803d;">
-ONU AO VIVO
-</div>
+<span class="tag">ONU</span>
 
 <h2>
-Representantes internacionais defenderiam ampliação imediata das metas climáticas
+Publicações mencionam possíveis impactos econômicos em setores globais
 </h2>
 
 <p>
-Declarações recentes de representantes ligados à ONU aumentaram debates nas redes sociais após discursos envolvendo aceleração das metas ambientais globais. Usuários afirmam que novas propostas poderiam ampliar impostos ambientais, restringir determinadas atividades industriais e acelerar medidas contra veículos considerados altamente poluentes.
-
-As discussões ganharam repercussão após conferências internacionais envolvendo mudanças climáticas e transição energética. Segundo publicações compartilhadas online, especialistas defendem que novas regras ambientais poderão impactar diretamente setores econômicos nos próximos anos.
+Segundo os conteúdos compartilhados online, áreas como agricultura, energia e transporte seriam diretamente afetadas por futuras decisões internacionais ligadas à sustentabilidade. As postagens afirmam ainda que alguns países poderiam adotar medidas mais rígidas para atingir metas climáticas nos próximos anos.
 </p>
 
-<button class="btn" style="background:#15803d;" onclick="toggleText('texto3')">
-Assistir entrevista
-</button>
-
-<div class="hidden" id="texto3">
-Especialistas divulgados nas redes sociais afirmam que novas metas climáticas internacionais poderiam afetar diretamente setores agrícolas, energéticos e industriais nos próximos anos.
-</div>
+<p>
+Especialistas lembram, porém, que muitas informações publicadas nas redes sociais acabam sendo divulgadas sem contexto completo ou confirmação oficial, aumentando a circulação de boatos e interpretações equivocadas.
+</p>
 
 </div>
 </div>
 
-<div class="comments">
+<div class="card" id="clima">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop">
+
+<div class="card-content">
+<span class="tag">Clima</span>
 
 <h2>
-Comentários em alta
+Debates ambientais seguem entre os assuntos mais comentados do cenário internacional
 </h2>
 
-<div class="comment">
-<h3>Carlos Henrique</h3>
 <p>
-“Agora faz sentido porque estão acelerando esses acordos climáticos.”
+A realização de eventos globais sobre meio ambiente tem gerado forte repercussão nas redes sociais, principalmente entre usuários interessados em temas econômicos e políticos. O aumento do compartilhamento de conteúdos relacionados ao clima também fez crescer a preocupação com desinformação digital e notícias sem verificação.
 </p>
-</div>
 
-<div class="comment">
-<h3>Fernanda Souza</h3>
 <p>
-“Quase ninguém comenta os impactos econômicos dessas decisões globais.”
+Organizações internacionais e agências de checagem recomendam sempre consultar fontes confiáveis antes de compartilhar conteúdos virais sobre política, economia ou acordos globais.
 </p>
-</div>
-
-<div class="comment">
-<h3>Ricardo Alves</h3>
-<p>
-“A população precisa entender melhor o que está sendo decidido nessas reuniões.”
-</p>
-</div>
 
 </div>
-
 </div>
 
-<button class="floating" onclick="alert('🚨 Compartilhado com sucesso!')">
-🚨 Compartilhe rápido
-</button>
+</section>
 
 <footer>
-
-<h3>
-Projeto escolar • Portal de notícias
-</h3>
-
+<h3>Portal Demonstrativo</h3>
 <p>
-Desenvolvido por Matheus Soares e Luiz Tavares
+Projeto visual fictício criado apenas para fins de estudo de layout e design.
 </p>
-
 </footer>
-
-<script>
-
-function toggleText(id){
-
-const texto = document.getElementById(id);
-
-if(texto.style.display === 'block'){
-texto.style.display = 'none';
-}else{
-texto.style.display = 'block';
-}
-
-}
-
-</script>
 
 </body>
 </html>

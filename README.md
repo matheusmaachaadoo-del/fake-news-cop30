@@ -24,6 +24,7 @@ scroll-behavior:smooth;
 body{
 background:#f3f4f6;
 color:#111827;
+overflow-x:hidden;
 }
 
 header{
@@ -48,6 +49,11 @@ border-radius:14px;
 font-size:34px;
 font-weight:900;
 cursor:pointer;
+transition:.3s;
+}
+
+.logo:hover{
+transform:scale(1.05);
 }
 
 nav{
@@ -70,6 +76,7 @@ align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
+padding:20px;
 }
 
 .hero::after{
@@ -83,6 +90,7 @@ background:rgba(0,0,0,.72);
 position:relative;
 z-index:2;
 max-width:1100px;
+width:100%;
 padding:20px;
 color:white;
 animation:fade 1s ease;
@@ -104,11 +112,19 @@ font-size:68px;
 line-height:1.1;
 margin-bottom:35px;
 font-weight:900;
+max-width:1050px;
+margin-left:auto;
+margin-right:auto;
+padding:0 20px;
+word-break:break-word;
+text-align:center;
 }
 
 .hero-content p{
 font-size:26px;
 line-height:1.9;
+max-width:950px;
+margin:auto;
 }
 
 .container{
@@ -188,6 +204,7 @@ border-left:6px solid #c4170c;
 border-radius:18px;
 font-size:19px;
 line-height:1.9;
+animation:fade .5s ease;
 }
 
 .comments{
@@ -232,6 +249,11 @@ font-weight:900;
 border-radius:999px;
 cursor:pointer;
 box-shadow:0 10px 25px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+.floating:hover{
+transform:scale(1.08);
 }
 
 footer{

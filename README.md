@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -49,11 +48,6 @@ border-radius:14px;
 font-size:34px;
 font-weight:900;
 cursor:pointer;
-transition:.3s;
-}
-
-.logo:hover{
-transform:scale(1.05);
 }
 
 nav{
@@ -65,7 +59,6 @@ nav a{
 color:white;
 text-decoration:none;
 font-weight:700;
-font-size:16px;
 }
 
 .hero{
@@ -92,7 +85,7 @@ z-index:2;
 max-width:1000px;
 padding:20px;
 color:white;
-animation:fade 1.2s ease;
+animation:fade 1s ease;
 }
 
 @keyframes fade{
@@ -107,14 +100,14 @@ transform:translateY(0);
 }
 
 .hero-content h1{
-font-size:68px;
+font-size:64px;
 line-height:1.1;
 margin-bottom:30px;
 font-weight:900;
 }
 
 .hero-content p{
-font-size:25px;
+font-size:24px;
 line-height:1.8;
 }
 
@@ -130,7 +123,7 @@ border-radius:28px;
 overflow:hidden;
 margin-bottom:60px;
 box-shadow:0 10px 30px rgba(0,0,0,.1);
-transition:.4s;
+transition:.3s;
 }
 
 .card:hover{
@@ -183,7 +176,7 @@ transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.07);
+transform:scale(1.06);
 }
 
 .hidden{
@@ -195,7 +188,6 @@ border-left:6px solid #c4170c;
 border-radius:18px;
 font-size:19px;
 line-height:1.8;
-animation:fade .5s ease;
 }
 
 .comments{
@@ -240,11 +232,6 @@ font-weight:900;
 border-radius:999px;
 cursor:pointer;
 box-shadow:0 10px 25px rgba(0,0,0,.3);
-transition:.3s;
-}
-
-.floating:hover{
-transform:scale(1.08);
 }
 
 footer{
@@ -255,15 +242,10 @@ padding:40px;
 margin-top:50px;
 }
 
-footer h3{
-font-size:28px;
-margin-bottom:12px;
-}
-
 @media(max-width:900px){
 
 .hero-content h1{
-font-size:42px;
+font-size:40px;
 }
 
 .hero-content p{
@@ -272,10 +254,6 @@ font-size:20px;
 
 .card h2{
 font-size:30px;
-}
-
-.card p{
-font-size:18px;
 }
 
 nav{
@@ -343,7 +321,7 @@ Ver documentos vazados
 </button>
 
 <div class="hidden" id="texto1">
-Os documentos compartilhados nas redes sociais afirmam que reuniões privadas da COP30 discutiriam novas metas ambientais envolvendo energia e circulação de veículos.
+Os documentos afirmam que reuniões privadas discutiriam novas metas ambientais e restrições energéticas internacionais.
 </div>
 
 </div>
@@ -364,7 +342,7 @@ Protocolo de Kyoto teria iniciado plano internacional de controle ambiental
 </h2>
 
 <p>
-Relatórios compartilhados em fóruns internacionais afirmam que o Protocolo de Kyoto teria sido o primeiro passo para políticas climáticas globais mais rígidas.
+Relatórios divulgados online afirmam que o Protocolo de Kyoto teria iniciado políticas climáticas globais mais rígidas adotadas atualmente.
 </p>
 
 <button class="btn" style="background:#2563eb;" onclick="toggleText('texto2')">
@@ -372,7 +350,7 @@ Abrir relatório secreto
 </button>
 
 <div class="hidden" id="texto2">
-Usuários afirmam que antigos acordos climáticos internacionais abriram caminho para novas políticas econômicas globais.
+Usuários afirmam que antigos acordos climáticos abriram caminho para novas políticas ambientais globais.
 </div>
 
 </div>
@@ -401,13 +379,58 @@ Assistir entrevista
 </button>
 
 <div class="hidden" id="texto3">
-Especialistas divulgados nas redes sociais afirmam que novas metas climáticas internacionais poderiam afetar setores agrícolas e industriais.
+Especialistas afirmam que novas metas ambientais poderiam afetar setores agrícolas e industriais.
 </div>
 
 </div>
 </div>
 
+<div class="comments">
+
+<h2>
+Comentários em alta
+</h2>
+
+<div class="comment">
+<h3>Carlos Henrique</h3>
+<p>
+“Agora faz sentido porque estão acelerando esses acordos climáticos.”
+</p>
 </div>
+
+<div class="comment">
+<h3>Fernanda Souza</h3>
+<p>
+“Quase ninguém comenta os impactos econômicos dessas decisões globais.”
+</p>
+</div>
+
+<div class="comment">
+<h3>Ricardo Alves</h3>
+<p>
+“A população precisa entender melhor o que está sendo decidido nessas reuniões.”
+</p>
+</div>
+
+</div>
+
+</div>
+
+<button class="floating" onclick="alert('🚨 Compartilhado com sucesso!')">
+🚨 Compartilhe rápido
+</button>
+
+<footer>
+
+<h3>
+Projeto escolar • Portal de notícias
+</h3>
+
+<p>
+Desenvolvido por Matheus Soares e Luiz Tavares
+</p>
+
+</footer>
 
 <script>
 
@@ -427,4 +450,3 @@ texto.style.display = 'block';
 
 </body>
 </html>
-```

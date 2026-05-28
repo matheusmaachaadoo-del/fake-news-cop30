@@ -63,7 +63,7 @@ font-weight:700;
 
 .hero{
 margin-top:85px;
-height:95vh;
+height:100vh;
 background:url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1600&auto=format&fit=crop') center/cover;
 display:flex;
 align-items:center;
@@ -82,7 +82,7 @@ background:rgba(0,0,0,.72);
 .hero-content{
 position:relative;
 z-index:2;
-max-width:1000px;
+max-width:1100px;
 padding:20px;
 color:white;
 animation:fade 1s ease;
@@ -100,15 +100,15 @@ transform:translateY(0);
 }
 
 .hero-content h1{
-font-size:64px;
+font-size:68px;
 line-height:1.1;
-margin-bottom:30px;
+margin-bottom:35px;
 font-weight:900;
 }
 
 .hero-content p{
-font-size:24px;
-line-height:1.8;
+font-size:26px;
+line-height:1.9;
 }
 
 .container{
@@ -132,12 +132,12 @@ transform:translateY(-10px);
 
 .card img{
 width:100%;
-height:420px;
+height:430px;
 object-fit:cover;
 }
 
 .card-content{
-padding:40px;
+padding:45px;
 }
 
 .tag{
@@ -151,14 +151,14 @@ margin-bottom:22px;
 }
 
 .card h2{
-font-size:42px;
-margin-bottom:24px;
+font-size:44px;
+margin-bottom:28px;
 line-height:1.2;
 }
 
 .card p{
-font-size:21px;
-line-height:1.9;
+font-size:22px;
+line-height:2;
 color:#374151;
 margin-bottom:30px;
 }
@@ -187,7 +187,7 @@ background:#f9fafb;
 border-left:6px solid #c4170c;
 border-radius:18px;
 font-size:19px;
-line-height:1.8;
+line-height:1.9;
 }
 
 .comments{
@@ -198,7 +198,7 @@ box-shadow:0 10px 30px rgba(0,0,0,.1);
 }
 
 .comments h2{
-font-size:40px;
+font-size:42px;
 margin-bottom:40px;
 }
 
@@ -209,13 +209,13 @@ border-bottom:1px solid #ddd;
 }
 
 .comment h3{
-font-size:22px;
+font-size:24px;
 margin-bottom:10px;
 }
 
 .comment p{
 font-size:20px;
-line-height:1.8;
+line-height:1.9;
 color:#374151;
 }
 
@@ -242,10 +242,19 @@ padding:40px;
 margin-top:50px;
 }
 
+footer h3{
+font-size:30px;
+margin-bottom:12px;
+}
+
+footer p{
+font-size:18px;
+}
+
 @media(max-width:900px){
 
 .hero-content h1{
-font-size:40px;
+font-size:42px;
 }
 
 .hero-content p{
@@ -254,6 +263,10 @@ font-size:20px;
 
 .card h2{
 font-size:30px;
+}
+
+.card p{
+font-size:18px;
 }
 
 nav{
@@ -290,7 +303,9 @@ COP30 e ONU estariam preparando acordo climático global com novas restrições 
 </h1>
 
 <p>
-Publicações compartilhadas nas redes sociais afirmam que representantes internacionais ligados à ONU e à COP30 estariam discutindo novas medidas ambientais capazes de afetar diretamente setores de energia, agricultura e transporte em diversos países.
+Publicações compartilhadas nas redes sociais afirmam que representantes internacionais ligados à ONU e à COP30 estariam discutindo novas medidas ambientais capazes de afetar diretamente setores de energia, agricultura e transporte em diversos países. Segundo os conteúdos divulgados online, o suposto acordo incluiria aumento gradual de impostos ambientais, aceleração das restrições contra veículos movidos a combustíveis fósseis e metas obrigatórias de redução industrial até 2035.
+
+Os conteúdos começaram a circular após reuniões preparatórias relacionadas à COP30, prevista para ocorrer no Brasil. Usuários afirmam que documentos compartilhados em fóruns internacionais indicariam discussões envolvendo limites mais rígidos para emissão de carbono, além de possíveis mudanças econômicas ligadas ao setor energético global.
 </p>
 
 </div>
@@ -313,7 +328,9 @@ Documentos vazados da COP30 indicariam novas restrições energéticas globais
 </h2>
 
 <p>
-Supostos documentos compartilhados em fóruns internacionais afirmam que representantes da COP30 discutiriam medidas para acelerar o abandono de combustíveis fósseis nos próximos anos.
+Supostos documentos compartilhados em fóruns internacionais afirmam que representantes da COP30 discutiriam medidas para acelerar o abandono de combustíveis fósseis nos próximos anos. Segundo os conteúdos divulgados online, as propostas poderiam aumentar tarifas energéticas, ampliar restrições sobre veículos considerados altamente poluentes e criar novas metas ambientais obrigatórias para países participantes.
+
+As publicações ganharam força após debates internacionais envolvendo transição energética e redução das emissões de carbono. Usuários afirmam que algumas medidas poderiam impactar diretamente setores industriais e aumentar custos relacionados à produção energética em diversos países.
 </p>
 
 <button class="btn" onclick="toggleText('texto1')">
@@ -321,7 +338,7 @@ Ver documentos vazados
 </button>
 
 <div class="hidden" id="texto1">
-Os documentos afirmam que reuniões privadas discutiriam novas metas ambientais e restrições energéticas internacionais.
+Os documentos compartilhados nas redes sociais afirmam que reuniões privadas da COP30 discutiriam novas metas ambientais envolvendo energia, combustíveis fósseis e circulação de veículos em grandes cidades.
 </div>
 
 </div>
@@ -342,7 +359,9 @@ Protocolo de Kyoto teria iniciado plano internacional de controle ambiental
 </h2>
 
 <p>
-Relatórios divulgados online afirmam que o Protocolo de Kyoto teria iniciado políticas climáticas globais mais rígidas adotadas atualmente.
+Relatórios compartilhados em fóruns internacionais afirmam que o Protocolo de Kyoto teria sido o primeiro passo para políticas climáticas globais mais rígidas adotadas atualmente. Segundo os conteúdos divulgados online, acordos ambientais assinados nas últimas décadas estariam aumentando pressões econômicas sobre setores industriais, agrícolas e energéticos.
+
+Usuários afirmam que novas metas climáticas internacionais estariam sendo utilizadas como base para futuras restrições ambientais envolvendo emissão de carbono, produção industrial e utilização de combustíveis fósseis.
 </p>
 
 <button class="btn" style="background:#2563eb;" onclick="toggleText('texto2')">
@@ -350,7 +369,7 @@ Abrir relatório secreto
 </button>
 
 <div class="hidden" id="texto2">
-Usuários afirmam que antigos acordos climáticos abriram caminho para novas políticas ambientais globais.
+Usuários afirmam que antigos acordos climáticos internacionais abriram caminho para novas políticas econômicas globais ligadas à redução industrial e aumento de taxas ambientais.
 </div>
 
 </div>
@@ -371,7 +390,9 @@ Representantes internacionais defenderiam ampliação imediata das metas climát
 </h2>
 
 <p>
-Declarações recentes de representantes ligados à ONU aumentaram debates nas redes sociais após discursos envolvendo aceleração das metas ambientais globais.
+Declarações recentes de representantes ligados à ONU aumentaram debates nas redes sociais após discursos envolvendo aceleração das metas ambientais globais. Usuários afirmam que novas propostas poderiam ampliar impostos ambientais, restringir determinadas atividades industriais e acelerar medidas contra veículos considerados altamente poluentes.
+
+As discussões ganharam repercussão após conferências internacionais envolvendo mudanças climáticas e transição energética. Segundo publicações compartilhadas online, especialistas defendem que novas regras ambientais poderão impactar diretamente setores econômicos nos próximos anos.
 </p>
 
 <button class="btn" style="background:#15803d;" onclick="toggleText('texto3')">
@@ -379,7 +400,7 @@ Assistir entrevista
 </button>
 
 <div class="hidden" id="texto3">
-Especialistas afirmam que novas metas ambientais poderiam afetar setores agrícolas e industriais.
+Especialistas divulgados nas redes sociais afirmam que novas metas climáticas internacionais poderiam afetar diretamente setores agrícolas, energéticos e industriais nos próximos anos.
 </div>
 
 </div>
